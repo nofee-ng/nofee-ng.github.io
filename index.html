@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="./img/favicon.ico">
+
+	<title>Next Generation NoDevFee Mining Software</title>
+
+        <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="./css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="./css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body class="homepage">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href=".">Next Generation NoDevFee Mining Software</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li class="active">
+                        <a href=".">Home</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="eth/">Eth</a>
+                    </li>
+                
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                    <li class="disabled">
+                        <a rel="next" >
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="eth/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a href="https://github.com/nofee-ng/nofee-ng">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#nofee-ng-the-next-generation-nodevfee-mining-software-for-cryptocurrency">nofee-ng: The Next Generation NoDevFee Mining Software for Cryptocurrency</a></li>
+        
+            <li><a href="#the-first-edition-you-can-find-on-this-planet-that-has-the-feature-of-anti-devfee-in-a-central-mode-for-both-gpu-miners-and-hardware-miners-fpga-asic-etc">The first edition you can find on this planet that has the feature of anti-DevFee in a central mode for both GPU miners and hardware miners (FPGA, ASIC, etc).</a></li>
+        
+            <li><a href="#the-refunded-devfee-will-show-up-in-a-mining-pool-in-about-12-hours-please-be-patient">The refunded DevFee will show up in a mining pool in about 1~2 hours. Please be patient!</a></li>
+        
+            <li><a href="#usage">Usage</a></li>
+        
+            <li><a href="#caution">Caution</a></li>
+        
+            <li><a href="#looking-for-test-first">Looking for test first?</a></li>
+        
+    
+        <li class="main "><a href="#nofee-ng">nofee-ng：下一代反抽水挖矿软件</a></li>
+        
+            <li><a href="#gpufpgaasic">市面上所能找到的第一款基于中心模式的反抽水挖矿软件，可同时用于GPU矿机及专用硬件矿机（如FPGA、ASIC矿机）</a></li>
+        
+            <li><a href="#12">返还的算力将会在1~2小时内出现在矿场中，请耐心等待</a></li>
+        
+            <li><a href="#_1">用法</a></li>
+        
+            <li><a href="#_2">注意点</a></li>
+        
+            <li><a href="#_3">想要先测试一下？</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="nofee-ng-the-next-generation-nodevfee-mining-software-for-cryptocurrency">nofee-ng: The Next Generation NoDevFee Mining Software for Cryptocurrency</h1>
+<h3 id="the-first-edition-you-can-find-on-this-planet-that-has-the-feature-of-anti-devfee-in-a-central-mode-for-both-gpu-miners-and-hardware-miners-fpga-asic-etc">The first edition you can find on this planet that has the feature of anti-DevFee in a central mode for both GPU miners and hardware miners (FPGA, ASIC, etc).</h3>
+<p><code>nofee-ng</code> is a generic solution for NoDevFee mining. It can get stolen cryptocurrency refunded back from mining software (which is known as DevFee and is about 0.5~2% of your total mining shares) for many kinds, such as ETH, ETC, XMR, ZCash, etc, by refunding DevFee to <strong>ANOTHER wallet address</strong> which can be different from the main mining address.</p>
+<p>This is the <strong>Next Generation</strong> of NoDevFee program. It works as a <em>"soft router"</em> rather than the first generation which works on a single same machine together with the mining software. So, <code>nofee-ng</code> works for Windows， Linux and hardware miner although itself must be run in Linux.</p>
+<p><code>nofee-ng</code> is perfect for mining farms for easy management. If you're a mining farm operator, you can also redirect the DevFee to your own wallet without the knowledge of your tenants! Remember: you are <strong>NOT</strong> stealing from your clients because DevFee belonged to the mining software author.</p>
+<h3 id="the-refunded-devfee-will-show-up-in-a-mining-pool-in-about-12-hours-please-be-patient">The refunded DevFee will show up in a mining pool in about 1~2 hours. Please be patient!</h3>
+<p>The refunded pool may be a different mining pool than your main pool since mining software may use another pool for DevFee. Please check the README.md in different implementation folders.</p>
+<p>The mechanism of <code>nofee-ng</code> is depicted in the following paradigm: The original network traffic, e.g. mining work submission, goes from miners directly to the pool. But now the traffic is redirected to the <code>nofee-ng</code> <em>soft router</em> who will change the DevFee wallet to your own wallet address.</p>
+<h2 id="usage">Usage</h2>
+<ol>
+<li>Set up a Linux machine which runs <code>nofee-ng</code> as a <em>soft router</em>. Install iptables and iproute (on some distros it's called iproute2). <code>nofee-ng</code> is tested on Debian 9 (Stretch) and CentOS 8, but should work on other Linux distros. The gateway of this <em>soft router</em> should point to the <em>real hard router</em>, say 192.168.0.1 in the previous diagram.</li>
+<li>Download the <code>nofee-ng</code> bundle from the corresponding folder for your cryptocurrency and extract it to <code>/opt/nofee-ng</code>.</li>
+<li>Change the wallet address to your refunded DevFee address in <code>nofee.txt</code>.</li>
+<li>Login as root or use sudo to execute the following commands on the Linux <em>soft router</em>:</li>
+<li><code>systemctl stop firewalld</code> (Skip this if you are not running a firewall)</li>
+<li><code>systemctl disable firewalld</code> (Skip this if you are not running a firewall)</li>
+<li>Disable SELinux: Change the line containing <code>SELINUX=</code> in file <code>/etc/selinux/config</code> to <code>SELINUX=disabled</code>. And reboot the <code>nofee-ng</code> soft router (Skip this if you are not using SELinux)</li>
+<li><code>ln -s /opt/nofee-ng/nofee.service /etc/systemd/system/</code></li>
+<li><code>systemctl enable nofee</code></li>
+<li><code>systemctl start nofee</code></li>
+<li>Now use <code>systemctl status nofee</code> to check whether you can see something like <code>Active: active (running)</code> in the heading lines, <code>Found NoFee Wallet</code> and <code>Running</code> in the tailing lines. If so, congratulations, <code>nofee-ng</code> is configured properly and running. It will be auto started by systemd on next reboot. Otherwise check the error message and Google it or leave me a message.</li>
+<li>Change the default gateway for all your miners to let them point to the <em>nofee-ng soft router</em>, say 192.168.0.2 in the next paradigm. You can do this on the DHCP server, e.g. the <em>real hard router</em>. Don't be afraid that traffic other than stratum will not work, <code>nofee-ng</code> won't touch them.</li>
+<li>Now let your miners work as usual. After about 1~2 hours, the refunded DevFee will show up in the mining pool as a new miner. The pool and miner's name depend on the mining software. For example, it may be <em>eth1.0</em> for ETH. Please check the implementation folder for detail.</li>
+</ol>
+<h2 id="caution">Caution</h2>
+<ol>
+<li><strong>DO NOT</strong> forget to change the wallet address in <code>nofee.txt</code></li>
+<li>Use <strong>PLAIN</strong> mining protocols. <strong>DO NOT</strong> use encrypted mining protocols like SSL stratum.</li>
+<li><strong>DO NOT</strong> kill nofee process with <code>kill -9</code>. If you want to stop it, use <code>systemctl stop nofee</code></li>
+</ol>
+<h2 id="looking-for-test-first">Looking for test first?</h2>
+<p>There are two ways to test whether <code>nofee-ng</code> works for your miner softwares. If it doesn't work, leave me an issue and I'll add support to your miner as soon as possible.</p>
+<ol>
+<li>Just change the gateway address of one miner to the <code>nofee-ng</code> soft router instead all of them and check the result. This is the recommended way.</li>
+<li>If you don't want to set up the soft router, deploy <code>nofee-ng</code> on the same machine with you Linux miner, and change the <code>ExecStart=</code> in <code>nofee.service</code> to <code>/opt/nofee-ng/nofee_eth -rs</code>. The <code>-rs</code> argument means <code>nofee-ng</code> is running in standalone mode. I'm sorry standalone mode doesn't work for Windows miners because it must be in the same machine of the miner software.</li>
+</ol>
+<p><em>A little advertisement</em>: We have a pratical diskless OS mining solution which can reduce the maintenance and cost both for mining farms and miner owners. Any time you have requirements or interest to build such a diskless OS, leave me an issue on Github.</p>
+<hr />
+<p><img alt="nofee-ng mechanism" src="./nofee.png" /></p>
+<hr />
+<h1 id="nofee-ng">nofee-ng：下一代反抽水挖矿软件</h1>
+<h3 id="gpufpgaasic">市面上所能找到的第一款基于中心模式的反抽水挖矿软件，可同时用于GPU矿机及专用硬件矿机（如FPGA、ASIC矿机）</h3>
+<p><code>nofee-ng</code>是一个通用的反抽水挖矿的解决方案。挖矿软件在工作的时候通常会偷算力（DevFee，大概占总算力的0.5~2%），<code>nofee-ng</code>可以把这部分被偷取的算力返还给你，它支持多种加密货币，如ETH、ETC、XMR、ZCash等。被偷取的算力可以被返还到主挖矿钱包，也可以返还到<strong>另外一个钱包</strong>。</p>
+<p>本项目是<strong>下一代</strong>反抽水软件。它与上一代反抽水软件（必须与挖矿软件运行在同一台矿机上）不同的是，它是以<em>“软路由”</em>的形式进行工作的。因此，尽管<code>nofee-ng</code>本身必须运行在Linux环境下，但它可同时适用于Windows、Linux以及专用矿机。</p>
+<p>因其易于管理，对于矿场来说，<code>nofee-ng</code>是理想的选择。如果你是矿场的运营者，你甚至可以在你的客户不知情的情况下把被偷的算力返还到你自己的钱包中。记住：你并<strong>没有</strong>偷取你客户的算力（DevFee），因为它们本来就是会被挖矿软件偷取的。</p>
+<h3 id="12">返还的算力将会在1~2小时内出现在矿场中，请耐心等待</h3>
+<p>部分挖矿软件会使用不同于你挖矿的主矿池进行偷算力，因此返还的矿池可能会不同于主矿池，详情请查看各个不同加密货币文件夹下的说明。</p>
+<p><code>nofee-ng</code>的原理如图所示：原来的网络流量（如挖矿结果提交）直接由矿机提交到矿池。但现在的网络流量被重定向到<code>nofee-ng</code>所在的<em>软路由</em>服务器上，它将把DevFee的钱包改为你自己的钱包。</p>
+<h2 id="_1">用法</h2>
+<ol>
+<li>准备一台安装了Linux操作系统的服务器，它将用于运行<code>nofee-ng</code>作为<em>软路由</em>。安装iptables及iproute（部分发行版叫iproute2）。<code>nofee-ng</code>在Debian 9 (Stretch)及CentOS 8上进行过测试，但应该适用于其它Linux发行版。修改Linux<em>软路由</em>的网关地址，让它指定<em>真实的物理路由器</em>地址（例如前面图中的192.168.0.1）。</li>
+<li>下载对应数字货币目录下的打包文件，并将它解压到<code>/opt/nofee-ng</code>。</li>
+<li>把<code>nofee.txt</code>中的地址改成你要返还的钱包地址。</li>
+<li>在Linux<em>软路由</em>上用root登录或通过sudo执行如下命令：</li>
+<li><code>systemctl stop firewalld</code> (如果你没有开启防火墙请跳过此步)</li>
+<li><code>systemctl disable firewalld</code> (如果你没有开启防火墙请跳过此步)</li>
+<li>关闭SELinux: 把文件<code>/etc/selinux/config</code>中含有<code>SELINUX=</code>的一行改成<code>SELINUX=disabled</code>，并重启<code>nofee-ng</code>软路由 (如果你没有开启SELinux请跳过此步)</li>
+<li><code>ln -s /opt/nofee-ng/nofee.service /etc/systemd/system/</code></li>
+<li><code>systemctl enable nofee</code></li>
+<li><code>systemctl start nofee</code></li>
+<li>使用<code>systemctl status nofee</code>检查输出的前面几行是否出现<code>Active: active (running)</code>，并且后面几行是否出现<code>Found NoFee Wallet</code>及<code>Running</code>，如果是的话，那么恭喜你，<code>nofee-ng</code>已经正确配置并且正在运行，在系统下次重启的时候它将由systemd自动启动。如果没有出现上述字样，请检查一下错误信息，Google一下或给我留言。</li>
+<li>更改所有矿机的网关地址，并让它们指向<em>nofee-ng软路由</em>，也就是前面图中的192.168.0.2。你也可以直接在DHCP服务器上（例如物理路由器）修改，直接把网关地址指向此软路由。无需担忧非挖矿协议不能工作，因为<code>nofee-ng</code>并不会修改它所不认识的流量。</li>
+<li>让你的矿机如常运行，大概1～2小时后，返还的算力（DevFee）将以一个新的矿工名出现在矿池中。返还的矿池及矿工名因挖矿软件而异，例如对ETH而言，新矿工名将是<em>eth1.0</em>，具体请参考相应的加密货币文件夹下的说明。</li>
+</ol>
+<h2 id="_2">注意点</h2>
+<ol>
+<li><strong>不要忘记</strong>更改<code>nofee.txt</code>下面的返回钱包地址。</li>
+<li>使用<strong>明文</strong>的挖矿协议，<strong>不要</strong>使用加密的挖矿协议，例如SSL。</li>
+<li><strong>不要</strong>使用<code>kill -9</code>来杀进程，如果你想关掉它，请使用<code>systemctl stop nofee</code>。</li>
+</ol>
+<h2 id="_3">想要先测试一下？</h2>
+<p>有两种方式可以测试一下<code>nofee-ng</code>能否适配你的挖矿软件。如果不能，请给我留个议题（Issue），我将尽快修复问题。</p>
+<ol>
+<li>推荐方式：只修改其中一个矿机的网关地址，让其指向<em>软路由</em>，并检查返回钱包中是否有新矿机。</li>
+<li>如果你不想另外搭建专门的<em>软路由</em>，把<code>nofee-ng</code>跟你的Linux矿工部署在同一台机上，把<code>nofee.service</code>中的<code>ExecStart=</code>行改为<code>/opt/nofee-ng/nofee_eth -rs</code>。<code>-rs</code>参数将让<code>nofee-ng</code>运行于独立模式。很遗憾，独立模式并不适用于Windows挖矿软件，因为它必须与挖矿软件部署在同一台机器上。</li>
+</ol>
+<p><em>插播一段小广告</em>：我们有一套可行的无盘挖矿解决方案，对矿场而言可降低维护成本，对矿主而言可降低硬件预算。如果你有无盘挖矿的需求或兴趣，请在Github上给我留一个Issue。</p></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        <script src="./js/jquery-1.10.2.min.js"></script>
+        <script src="./js/bootstrap-3.0.3.min.js"></script>
+        <script src="./js/highlight.pack.js"></script>
+        <script>var base_url = '.';</script>
+        <script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
+        <script src="./js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 0.15.3
+Build Date UTC : 2021-04-08 12:17:47
+-->
