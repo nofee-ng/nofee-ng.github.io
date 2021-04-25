@@ -60,6 +60,12 @@
                 
                 
                     <li >
+                        <a href="../diskless/">Diskless</a>
+                    </li>
+                
+                
+                
+                    <li >
                         <a href="../download/">Download</a>
                     </li>
                 
@@ -111,7 +117,7 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#nofee-ng-for-eth-the-next-generation-nodevfee-mining-software-for-ethereum">nofee-ng for ETH: The Next Generation NoDevFee Mining Software for Ethereum</a></li>
+        <li class="main active"><a href="#nofee-ng-for-eth-next-generation-nodevfee-mining-software-for-ethereum">nofee-ng for ETH: Next Generation NoDevFee Mining Software for Ethereum</a></li>
         
             <li><a href="#notes">Notes</a></li>
         
@@ -129,15 +135,22 @@
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="nofee-ng-for-eth-the-next-generation-nodevfee-mining-software-for-ethereum">nofee-ng for ETH: The Next Generation NoDevFee Mining Software for Ethereum</h1>
+<h1 id="nofee-ng-for-eth-next-generation-nodevfee-mining-software-for-ethereum">nofee-ng for ETH: Next Generation NoDevFee Mining Software for Ethereum</h1>
 <p><code>nofee_eth</code> is an implementation of <code>nofee-ng</code> for ETH.</p>
 <h2 id="notes">Notes</h2>
 <ol>
 <li><code>nofee_eth</code> is tested with PhoenixMiner and Claymore Miner. If it can't work with your ETH miner software, leave me an issue.</li>
 <li>The refunded mining pool and worker's name varies for different miners:</li>
-<li>For PhoenixMiner, the worker's name is <em>eth1.0</em>. The mining pool could be your main mining pool, <a href="https://eth.nanopool.org">Nanopool</a>, or <a href="https://ethpool.org/">ETHPOOL</a>, check <strong>ALL</strong> of them for your refunded DevFee.</li>
-<li>For Claymore Miner, the worker's name is <em>eth1.0</em>. The mining pool is your main mining pool.</li>
+<li>For PhoenixMiner, the worker's name is <em>eth1.0</em>. The refunded pool could be your main mining pool, <a href="https://eth.nanopool.org">Nanopool</a> or <a href="https://ethermine.org/">Ethermine</a>, check <strong>ALL</strong> of them for your refunded DevFee.</li>
+<li>For Gminer, the worker's name is <em>eth1.0</em>. The refunded pool is <a href="https://www.sparkpool.com/">SparkPool</a> .</li>
+<li>For Claymore Miner, the worker's name is <em>eth1.0</em>. The refunded pool is your main mining pool.</li>
+<li>NBMiner is not supported since it uses an encrypted protocol to mine DevFee. Use other mining software.</li>
 <li>The refunded DevFee will show up in a mining pool in about <strong>1~2 hours</strong>. Please be patient!</li>
+<li><strong>SOMETIMES</strong> despite you use plain mining protocols on your main wallet, the mining software will still use SSL protocols for DevFee which makes <code>nofee-ng</code> unable to detect DevFee. This is found when using PhoenixMiner.</li>
+<li>Typical URLs to check refunded DevFee (replace 0xAAAA with your wallet address):</li>
+<li><a href="https://eth.nanopool.org">Nanopool</a>: https://eth.nanopool.org/account/0xAAAA</li>
+<li><a href="https://ethermine.org/">Ethermine</a>: https://ethermine.org/miners/0xAAAA/dashboard</li>
+<li><a href="https://www.sparkpool.com/">SparkPool</a>: https://www.sparkpool.com/miner/0xAAAA/data?currency=ETH</li>
 </ol>
 <h2 id="usage">Usage</h2>
 <p>Check the Usage section of <code>nofee-ng</code> for detail: <a href="https://github.com/nofee-ng/nofee-ng">https://github.com/nofee-ng/nofee-ng</a></p>
@@ -148,9 +161,16 @@
 <ol>
 <li><code>nofee_eth</code>在PhoenixMiner和Claymore Miner这两款软件上进行过测试，如果你发现它不能用于你的ETH挖矿软件，请给我留言。</li>
 <li>用于返回的矿池名和矿工名因不同的挖矿软件而异：</li>
-<li>对于PhoenixMiner：矿工名是<em>eth1.0</em>。返还的矿池可能是你用于挖矿的主矿池，也可能是<a href="https://eth.nanopool.org">Nanopool</a>，或<a href="https://ethpool.org/">ETHPOOL</a>，请检查<strong>所有</strong>这几个矿池，看看有没有你的返还算力(DevFee)。</li>
+<li>对于PhoenixMiner：矿工名是<em>eth1.0</em>。返还的矿池可能是你用于挖矿的主矿池，也可能是<a href="https://eth.nanopool.org">Nanopool</a>，或<a href="https://ethermine.org/">Ethermine</a>，请检查<strong>所有</strong>这几个矿池，看看有没有你的返还算力(DevFee)。</li>
+<li>对于Gminer：矿工名是<em>eth1.0</em>。返还的矿池就是<a href="https://www.sparkpool.com/">SparkPool</a>。</li>
 <li>对于Claymore Miner：矿工名是<em>eth1.0</em>。返还的矿池就是你用于挖矿的主矿池。</li>
+<li>因为NBMiner使用加密的协议去挖DevFee，因此并不能对它进行反抽水。请使用其它挖矿软件。</li>
 <li>返还的算力将会在1~2小时内出现在矿场中，请耐心等待。</li>
+<li>有些时候尽管你在主挖矿钱包上使用了明文挖矿协议，挖矿软件<strong>偶尔</strong>还是会使用SSL协议来挖DevFee，从而造成<code>nofee-ng</code>检测不到DevFee。PhoenixMiner就是如此。</li>
+<li>典型的返还DevFee的矿池如下（把0xAAAA替换为你的钱包地址）：</li>
+<li><a href="https://eth.nanopool.org">Nanopool</a>: https://eth.nanopool.org/account/0xAAAA</li>
+<li><a href="https://ethermine.org/">Ethermine</a>: https://ethermine.org/miners/0xAAAA/dashboard</li>
+<li><a href="https://www.sparkpool.com/">SparkPool</a>: https://www.sparkpool.com/miner/0xAAAA/data?currency=ETH</li>
 </ol>
 <h2 id="_2">用法</h2>
 <p>请参考<code>nofee-ng</code>主页面的用法部分: <a href="https://github.com/nofee-ng/nofee-ng">https://github.com/nofee-ng/nofee-ng</a></p></div>
